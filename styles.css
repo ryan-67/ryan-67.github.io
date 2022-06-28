@@ -1,0 +1,169 @@
+
+body{
+    background-color: #29292B;
+    color: white;
+    font-family: consolas;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin:0;
+}
+
+.wrapper{
+    background-color: #D7C49EFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 4em;
+    padding-top: 0;
+    width: 100%;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:active{
+    text-decoration: underline;
+    color: black;
+}
+
+.header-wrapper{
+    background-color: #D7C49EFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 24px;
+    text-decoration: none;
+    padding-top:15px;
+    padding-right:15px;
+    padding-bottom: 15px;;
+    padding-left:15px;
+    color: black;
+    position: fixed;
+}
+
+body{
+    overflow-wrap:break-word;
+}
+
+.header-title{
+    margin-right: 0.5rem;
+    min-width: 10%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-grow: 10;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+
+
+
+div{
+    display: block;
+}
+
+
+#footer{
+    background: #D7C49EFF;
+    color: black;
+    text-align: left;
+}
+
+#footer .footer-elements{
+    display:inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0;
+    color: black;
+    padding-left: 15px;
+}
+
+#intro{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.summary{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+#highlights{
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#highlights h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.block{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.info1{
+    margin: 10px;
+}
+
+.logo1{
+    margin: -30px 0;
+}
+
+#hello{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+#about{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+#contact{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+#resume{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+#res{
+    text-align: center;
+}
+
+aside:hover{
+    color: #29292B;
+}
