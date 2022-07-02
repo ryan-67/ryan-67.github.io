@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Kim</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class>
     <div class="wrapper">
       <header class="header">
         <div class="header-wrapper">
           <div class="header-title">
-            <a href="/index.html">Ryan Kim</a>
+            <a>Ryan Kim</a>
           </div>
           <div class="menu">
             <div class="menu-inner">
               <a class="menu-item" href="about.html">about</a>
               <a class="menu-item" href="contact.html">contact</a>
               <a class="menu-item" href="resume.html">resume</a>
+              <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+              </button>
             </div>
           </div>
         </div>
@@ -49,25 +53,19 @@
       <h1>Experience</h1>
       <div class="block">
         <div class="info1">
-          <img
-            class="logo1"
-            src="assets/3i.jpg"
-            width="100"
-            height="100"
-          />
+          <img class="logo1" src="assets/3i.jpg" width="100" height="100" />
           <h3>SWE Intern - 3i Inc.</h3>
-          <p>
-            I had the amazing opportunity to intern at 3i Inc. in Seoul, South
-            Korea. I got to dabble in multiple different fields including
-            project management, DevOps, database administration, and quality
-            assurance.
-          </p>
+          <div class="exp-summary">
+            <p>
+              I had the amazing opportunity to intern at 3i Inc. in Seoul, South
+              Korea. I got to dabble in multiple different fields including
+              project management, DevOps, database administration, and quality
+              assurance.
+            </p>
+          </div>
         </div>
         <aside id="pic1">
-          <img
-            src="assets/3i_group-pic.JPG"
-            width="400 height=300"
-          />
+          <img src="assets/3i_group-pic.JPG" width="400 height=300" />
         </aside>
       </div>
     </section>

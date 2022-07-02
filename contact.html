@@ -1,43 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Kim</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-wrapper">
-          <div class="header-title">
-            <a href="index.html">Ryan Kim</a>
-          </div>
-          <div class="menu">
-            <div class="menu-inner">
-              <a class="menu-item" href="about.html">about</a>
-              <a class="menu-item" href="contact.html">contact</a>
-              <a class="menu-item" href="resume.html">resume</a>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-    <div id="contact">
-      <h1>Contact</h1>
-    </div>
-    <footer id="footer">
-      <div class="footer-elements">
-        <p>Ryan Kim</p>
-        <a
-          href="https://www.linkedin.com/in/ryan-kim-47512b183/"
-          target="_blank"
-        >
-          <img src="assets/linkedin.png" width="50" height="50"
-        /></a>
-        <p>67rkim@gmail.com</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Kim</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<br class>
+<div class="wrapper">
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="index.html">Ryan Kim</a>
       </div>
-    </footer>
-  </body>
+      <div class="menu">
+        <div class="menu-inner">
+          <a class="menu-item" href="about.html">about</a>
+          <a class="menu-item" href="contact.html">contact</a>
+          <a class="menu-item" href="resume.html">resume</a>
+          <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+              <path fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<div id="contact">
+  <h1>Contact</h1>
+</div>
+<form class="my-form" onsubmit="sendEmail(); reset(); return false;">
+  <div class="form-group">
+    <label for="">First Name *</label>
+    </br>
+    <input class="text-box" id="first-name" type="text" required />
+  </div>
+  </br>
+  <div class="form-group">
+    <label for="">Last Name *</label>
+    </br>
+    <input class="text-box" id="last-name" type="text" required />
+  </div>
+  </br>
+  <div class="form-group">
+    <label for="">Email *</label>
+    </br>
+    <input class="text-box" id="email" type="email" required />
+  </div>
+  </br>
+  <div class="msg-form">
+    <label for="">Message *</label>
+    </br>
+    <textarea name="msg-box" id="msg-box" cols="30" rows="10" required></textarea>
+  </div>
+  </br>
+
+  <button onclick="sendMsg();">Send</button>
+</form>
+</div>
+<footer id="footer">
+  <div class="footer-elements">
+    <p>Ryan Kim</p>
+    <a href="https://www.linkedin.com/in/ryan-kim-47512b183/" target="_blank">
+      <img src="assets/linkedin.png" width="50" height="50" /></a>
+    <p>67rkim@gmail.com</p>
+  </div>
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail() {
+  Email.send({
+    SecureToken: "3d349602-1d0f-4d4a-9ba1-595e24f29bae",
+    To : '67rkim@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Contact Form Message",
+    Body : "First Name: " + document.getElementById("first-name").value + "<br> Last Name: " + document.getElementById("last-name").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("msg-box").value
+}).then(
+  message => alert("Your message has been sent.")
+);
+}
+</script>
+</body>
+
 </html>

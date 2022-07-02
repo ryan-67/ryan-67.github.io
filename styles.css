@@ -1,7 +1,17 @@
+@import url('https://css.gg/dark-mode.css');
+
+* {
+    transition: 100ms;
+}
+
+:root{
+    --light-color: whitesmoke;
+    --dark-color: #29292B;
+}
 
 body{
-    background-color: #29292B;
-    color: white;
+    background-color: var(--dark-color);
+    color: var(--light-color);
     font-family: consolas;
     font-size: 16px;
     line-height: 1.6em;
@@ -29,7 +39,7 @@ a:visited{
 
 a:hover{
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--light-color);
 }
 
 a:active{
@@ -48,10 +58,11 @@ a:active{
     text-decoration: none;
     padding-top:15px;
     padding-right:15px;
-    padding-bottom: 15px;;
+    padding-bottom: 20px;
     padding-left:15px;
     color: black;
     position: fixed;
+    border-bottom: 4px solid #29292B;
 }
 
 body{
@@ -80,6 +91,7 @@ div{
     background: #D7C49EFF;
     color: black;
     text-align: left;
+    border-top: 4px solid #29292B;
 }
 
 #footer .footer-elements{
@@ -116,6 +128,7 @@ div{
 #highlights h1{
     text-align: center;
     font-size: 30px;
+    margin-top: 80px;
 }
 
 .block{
@@ -143,7 +156,7 @@ div{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #contact{
@@ -167,3 +180,125 @@ div{
 aside:hover{
     color: #29292B;
 }
+
+.exp-summary{
+    margin-right: 30px;
+}
+
+#about-info{
+    width: 30%;
+    margin-left: 200px;
+}
+
+.hobby{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.extra{
+    display: table-cell;
+    width: 50%;
+
+}
+
+#extra-r1{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#extra-r2{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.extra h3{
+    text-align: center;
+}
+
+#hobby-list{
+    margin-bottom: 80px;
+}
+
+.hobby-p{
+    padding-left:80px;
+    padding-right:80px;
+}
+
+.cropped-sq img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.hobby-block{
+    text-align: center;
+}
+
+.cropped1 img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+#slideshow{
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    padding: 10px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom:10px;
+}
+
+.darkmode {
+    background: #D7C49EFF;
+    color: black;
+}
+
+#icon {
+    width: 20px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+
+.dark-mode-toggle {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.menu {
+    padding-right: 40px;
+}
+
+.my-form {
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.text-box {
+    width: 200px;
+    resize: horizontal;
+    font-family: consolas;
+}
+
