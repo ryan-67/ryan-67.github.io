@@ -5,18 +5,19 @@ let music = [];
 let food = [];
 let sports = [];
 let time = 1200;
-music[0] = "assets/homies.jpg";
-music[1] = "assets/bloo.jpg";
-music[2] = "assets/changmo.jpg";
-music[3] = "assets/since.jpg";
-music[4] = "assets/jayci.jpg";
-food[0] = "assets/onepot.jpg";
-food[1] = "assets/oreno.jpg";
-food[2] = "assets/chirashi.jpg";
-food[3] = "assets/mazesoba.jpg";
-sports[0] = "assets/hs_soccer.png";
-sports[1] = "assets/snowboard.jpg";
-sports[2] = "assets/im.png";
+var image = document.createElement("img");
+music[0] = image.src = "assets/homies.jpg";
+music[1] = image.src = "assets/bloo.jpg";
+music[2] = image.src = "assets/changmo.jpg";
+music[3] = image.src = "assets/since.jpg";
+music[4] = image.src = "assets/jayci.jpg";
+food[0] = image.src = "assets/onepot.jpg";
+food[1] = image.src = "assets/oreno.jpg";
+food[2] = image.src = "assets/chirashi.jpg";
+food[3] = image.src = "assets/mazesoba.jpg";
+sports[0] = image.src = "assets/hs_soccer.png";
+sports[1] = image.src = "assets/snowboard.jpg";
+sports[2] = image.src = "assets/im.png";
 
 function changeImg() {
   document.slide4.src = music[i];
@@ -41,3 +42,4 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
