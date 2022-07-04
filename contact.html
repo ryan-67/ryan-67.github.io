@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
-<br class>
 <div class="wrapper">
   <header class="header">
     <div class="header-wrapper">
@@ -36,7 +35,7 @@
 <div id="contact">
   <h1>Contact</h1>
 </div>
-<form class="my-form" onsubmit="sendEmail(); reset(); return false;">
+<form class="my-form" action="https://formspree.io/f/xnqwkawr" method="POST">
   <div class="form-group">
     <label for="">First Name *</label>
     </br>
@@ -62,9 +61,10 @@
   </div>
   </br>
 
-  <button onclick="sendMsg();">Send</button>
+  <button type="submit">Send</button>
 </form>
 </div>
+
 <footer id="footer">
   <div class="footer-elements">
     <p>Ryan Kim</p>
@@ -73,20 +73,8 @@
     <p>67rkim@gmail.com</p>
   </div>
 </footer>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-function sendEmail() {
-  Email.send({
-    SecureToken: "3d349602-1d0f-4d4a-9ba1-595e24f29bae",
-    To : '67rkim@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Contact Form Message",
-    Body : "First Name: " + document.getElementById("first-name").value + "<br> Last Name: " + document.getElementById("last-name").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("msg-box").value
-}).then(
-  message => alert("Your message has been sent.")
-);
-}
-</script>
+
 </body>
 
 </html>
+

@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Kim</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body class>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-wrapper">
-          <div class="header-title">
-            <a href="index.html">Ryan Kim</a>
-          </div>
-          <div class="menu">
-            <div class="menu-inner">
-              <a class="menu-item" href="about.html">about</a>
-              <a class="menu-item" href="contact.html">contact</a>
-              <a class="menu-item" href="resume.html">resume</a>
-              <button id="dark-mode-toggle" class="dark-mode-toggle">
-                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
-              </button>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Kim</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="slideshow.js" defer></script>
+</head>
+
+<body class>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header-title">
+          <a href="index.html">Ryan Kim</a>
+        </div>
+        <div class="menu">
+          <div class="menu-inner">
+            <a class="menu-item" href="about.html">about</a>
+            <a class="menu-item" href="contact.html">contact</a>
+            <a class="menu-item" href="resume.html">resume</a>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+              <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                <path fill="currentColor"
+                  d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                  transform="translate(-8 -8)" />
+              </svg>
+            </button>
           </div>
         </div>
-      </header>
-    </div>
-    <div id="about">
-      <h1>About</h1>
-    </div>
-    <div id="about-info">
-      <p>
-        I was born in Seoul, South Korea but my family immigrated to California when I was just 3 years old. Even though I spent a majority of my life in the US and only attended American schools, I am still fluent in Korean as it is my birth tongue and the language we use at home. At my internship at 3i Inc. in Seoul last summer, I had no problems communicating in Korean, even in a formal work setting.
-      </p>
-      <p>
-        After graduating from high school in 2018, I attended the University of Washington-Seattle as a pre-science major, which is essentially undeclared but within the sciences field. During my sophomore year, I applied to the UW Informatics major as well as to transfer admission to University of California schools just to open up my options. Though I was accepted to the UW iSchool Informatics major, I ended up transferring to the University of California-Davis as a Computer Science major after taking multiple factors into consideration. 
-      </p>
-      <p>
-        Currently, I am a Silicon Valley, CA based software developer and recent graduate from UC Davis with a B.S. in Computer Science. I am seeking full-time employment as a full-stack software developer / enginner. In my free time, I am studying deeper computer science topics and practicing the skills I learn in the form of small personal projects
-      </p>
-    </div>
-    <h2 class="hobby">Hobbies & Interests</h2>
-    <section id="hobby-list">
+      </div>
+    </header>
+  </div>
+  <div id="about">
+    <h1>About</h1>
+  </div>
+  <div id="about-info">
+    <p>
+      I was born in Seoul, South Korea but my family immigrated to California when I was just 3 years old. Even though I
+      spent a majority of my life in the US and only attended American schools, I am still fluent in Korean as it is my
+      birth tongue and the language we use at home. At my internship at 3i Inc. in Seoul last summer, I had no problems
+      communicating in Korean, even in a formal work setting.
+    </p>
+    <p>
+      After graduating from high school in 2018, I attended the University of Washington-Seattle as a pre-science major,
+      which is essentially undeclared but within the sciences field. During my sophomore year, I applied to the UW
+      Informatics major as well as to transfer admission to University of California schools just to open up my options.
+      Though I was accepted to the UW iSchool Informatics major, I ended up transferring to the University of
+      California-Davis as a Computer Science major after taking multiple factors into consideration.
+    </p>
+    <p>
+      Currently, I am a Silicon Valley, CA based software developer and recent graduate from UC Davis with a B.S. in
+      Computer Science. I am seeking full-time employment as a full-stack software developer / enginner. In my free
+      time, I am studying deeper computer science topics and practicing the skills I learn in the form of small personal
+      projects
+    </p>
+  </div>
+  <h2 class="hobby">Hobbies & Interests</h2>
+  <section id="hobby-list">
     <div id="extra-r1">
-    <div class="extra">
-      <h3>Food</h3>
-      <div class="hobby-block">
-      <div id="slideshow">
-        <div class="cropped1">
-          <img src="assets/onepot.jpg">
-        </div>
-        <div class="cropped1">
-          <img src="assets/oreno.jpg">
-        </div>
-        <div class="cropped1">
-          <img src="assets/chirashi.jpg">
-        </div>
-        <div class="cropped1">
-          <img src="assets/mazesoba.jpg">
+      <div class="extra">
+        <h3>Food</h3>
+        <div class="hobby-block">
+          <div id="slideshow">
+            <div id="slideshow">
+              <img name="slide1" width="250px" height="250px">
+            </div>
+            
+          </div>
+          <div class="hobby-p">
+            <p>I love discovering new places to eat. I keep all the delicious restaurants I've been to bookmarked and
+              have an album in my phone dedicated to pictures of my favorite foods! My favorite right now would have to
+              be hot pot, especially Korean and Japanese style. I also enjoy cooking which helps with my current gym
+              grind.</p>
+          </div>
         </div>
       </div>
-      <div class="hobby-p">
-      <p>I love discovering new places to eat. I keep all the delicious restaurants I've been to bookmarked and have an album in my phone dedicated to pictures of my favorite foods! My favorite right now would have to be hot pot, especially Korean and Japanese style. I also enjoy cooking which helps with my current gym grind.</p>
-    </div>
-    </div>
-    </div>
-    <div class="extra">
-      <h3>Gym</h3>
-      <div class="hobby-block">
-        <div id="slideshow">
-          <div class="cropped-sq">
-            <img src="assets/onepot.jpg">
+      <div class="extra">
+        <h3>Gym</h3>
+        <section class="hobby-block">
+          <div id="slideshow">
+            <img src="assets/mazesoba.jpg" class="slideshow-img" width="250px" height="250px">
           </div>
-          <div class="cropped-sq">
-            <img src="assets/oreno.jpg">
+          <div class="hobby-p">
+            <p>It was difficult to workout regularly while in school, but now I am going 6 days a week. Currently, I
+              wake
+              up at 7 am every morning for a 1.5-2 hour workout session and try to sleep at 12 am in order to maintain a
+              healthy sleep cycle. Hopefully I'll be able to share some progress pictures once I'm a bit more confident.
+            </p>
           </div>
-          <div class="cropped-sq">
-            <img src="assets/chirashi.jpg">
-          </div>
-          <div class="cropped-sq">
-            <img src="assets/mazesoba.jpg">
-          </div>
-        </div>
-      <div class="hobby-p">
-      <p>It was difficult to workout regularly while in school, but now I am going 6 days a week. Currenly, I wake up at 7 am every morning for a 1.5-2 hour workout session and try to sleep at 12 am in order to maintain a healty sleep cycle. Hopefully I'll be able to share some progress pictures once I'm a bit more confident.</p>
-    </div>
-    </div>
-    </div>
-  </div>
-  <div id="extra-r2">
-  <div class="extra">
-      <h3>Sports</h3>
-      <div class="hobby-block">
-        <div id="slideshow">
-          <div class="cropped-rec">
-            <img src="assets/hs_soccer.png" style="width: 400px; height: 300px; object-fit: scale-down;">
-          </div>
-          <div>
-            <img src="assets/snowboard.JPG" width="300" height="400">
-          </div>
-          <div class="cropped-rec">
-            <img src="assets/im.png" style="width: 400px; height: 300px; object-fit: contain;">
-          </div>
-        </div>
-      <div class="hobby-p">
-      <p>I've always been fairly athletic and able to play most sports at a decent level. I played tennis and soccer competitively up until middle and high school respectively. I also played intramural soccer at UC Davis. Nowadays, I enjoy recreationally playing any sport I can including soccer, tennis, golf, bowling, snowboarding, and pool. </p>
+        </section>
       </div>
     </div>
-    </div>
-    <div class="extra">
-      <h3>Music</h3>
-      <div class="hobby-block">
-        <div id="slideshow">
-          <div class="cropped1">
-            <img src="assets/homies.jpg">
+    <div id="extra-r2">
+      <div class="extra">
+        <h3>Sports</h3>
+        <div class="hobby-block">
+          <div id="slideshow">
+            <img name="slide3" width="400px" height="250px">
           </div>
-          <div class="cropped1">
-            <img src="assets/changmo.jpg">
-          </div>
-          <div class="cropped1">
-            <img src="assets/kidwine.jpg">
-          </div>
-          <div class="cropped1">
-            <img src="assets/bloo.jpg">
-          </div>
-          <div class="cropped1">
-            <img src="assets/jayci.jpg">
-          </div>
-          <div class="cropped1">
-            <img src="assets/since.jpg">
+          <div class="hobby-p">
+            <p>I've always been fairly athletic and able to play most sports at a decent level. I played tennis and
+              soccer competitively up until middle and high school respectively. I also played intramural soccer at UC
+              Davis. Nowadays, I enjoy recreationally playing any sport I can including soccer, tennis, golf, bowling,
+              snowboarding, and pool. </p>
           </div>
         </div>
-      <div class="hobby-p">
-      <p>My music tastes are a little tricky to describe and I haven't met many others who share the same tastes. I almost exclusively listen to Korean hip-hop. Where it gets difficult to describe is when the Korean artists I like start mixing in other genres. Some of my favorite songs could be described as Korean hip-hop with a little rock influence.</p>
+      </div>
+      <div class="extra">
+        <h3>Music</h3>
+        <div class="hobby-block">
+          <div id="slideshow">
+            <img name="slide4" width="250px" height="250px">
+          </div>
+          <div class="hobby-p">
+            <p>My music tastes are a little tricky to describe and I haven't met many others who share the same tastes.
+              I almost exclusively listen to Korean hip-hop. Where it gets difficult to describe is when the Korean
+              artists I like start mixing in other genres. Some of my favorite songs could be described as Korean
+              hip-hop with a little rock influence.</p>
+          </div>
+        </div>
       </div>
     </div>
     </div>
+  </section>
+  <footer id="footer">
+    <div class="footer-elements">
+      <p>Ryan Kim</p>
+      <a href="https://www.linkedin.com/in/ryan-kim-47512b183/" target="_blank">
+        <img src="assets/linkedin.png" width="50" height="50" /></a>
+      <p>67rkim@gmail.com</p>
     </div>
-  </div>
-</section>
-    <footer id="footer">
-      <div class="footer-elements">
-        <p>Ryan Kim</p>
-        <a
-          href="https://www.linkedin.com/in/ryan-kim-47512b183/"
-          target="_blank"
-        >
-          <img src="assets/linkedin.png" width="50" height="50"
-        /></a>
-        <p>67rkim@gmail.com</p>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
